@@ -1,0 +1,91 @@
+/* Box sizing rule */
+* {
+    box-sizing: border-box;
+  }
+
+  main {
+    width: 80vw;
+    /* margin: 0 auto; */
+  }
+  
+  /* Container class for sections */
+  .container {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Image container class */
+  .image-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Floated element class */
+  .float-left {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  aside.content-list {
+    float: right;
+    /* width: 20vw; */
+    position: sticky;
+    top: 20px;
+  }
+
+  
+  /* Alternating float for images */
+.float-left {
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+  }
+  
+  .float-right {
+    float: right;
+    width: 45%;
+    margin-left: 20px;
+  }
+  
+  /* Ensure figures do not exceed container width */
+  figure {
+    max-width: 100%;
+  }
+  
+  /* Clearfix to maintain normal flow */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  /* Logo Styles */
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 60px; /* Adjust as needed */
+    height: auto;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+  
+  

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="nav-menu.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo2.png" alt="Site Logo" class="logo">
+        <h1>Contact Us</h1>
+        <nav class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="contact-us.html">Contact Us</a> 
+        </nav>
+      </header>
+    <main>
+        <div class="container">
+            <form action="success.html" method="GET">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <label for="contact-method">Preferred Method of Contact:</label><br>
+                    <input type="radio" id="email-contact" name="contact-method" value="email" checked>
+                    <label for="email-contact">Email</label><br>
+                    <input type="radio" id="phone-contact" name="contact-method" value="phone">
+                    <label for="phone-contact">Phone</label><br><br>
+                    <label for="services">Interested Services:</label><br>
+                    <input type="checkbox" id="web-design" name="services" value="web-design">
+                    <label for="web-design">Web Design</label><br>
+                    <input type="checkbox" id="seo" name="services" value="seo">
+                    <label for="seo">SEO</label><br>
+                    <input type="checkbox" id="consulting" name="services" value="consulting">
+                    <label for="consulting">Consulting</label><br><br>
+                    <label for="budget">Project Budget:</label><br>
+                    <select id="budget" name="budget">
+                        <option value="under-1000">Under $1000</option>
+                        <option value="1000-5000">$1000 - $5000</option>
+                        <option value="5000-10000">$5000 - $10000</option>
+                        <option value="over-10000">Over $10000</option>
+                    </select><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p><a href="https://www.dcccd.edu">Dallas College Website</a></p>
+        <p><a href="mailto:email@example.com">Email Webmaster</a></p>
+    </footer>
+</body>
+</html>
